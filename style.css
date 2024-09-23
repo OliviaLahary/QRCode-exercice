@@ -1,0 +1,72 @@
+/* Reset and Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  body {
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  /* QR Code Container */
+  .qr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* QR Card Styles */
+  .qr-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 320px; 
+  }
+  
+  .qr-image {
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  /* Text Styles */
+  .qr-text h1 {
+    font-size: 1.25rem; 
+    font-weight: bold;
+    color: hsl(218, 44%, 22%);
+    margin-top: 20px;
+  }
+  
+  .qr-text p {
+    font-size: 0.9375rem; 
+    color: hsl(220, 15%, 55%);
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+  
+  /* Desktop Media Query */
+  @media (min-width: 768px) {
+    .qr-card {
+      max-width: 350px; 
+      padding: 25px;
+    }
+  
+    .qr-text h1 {
+      font-size: 1.5rem; 
+    }
+  
+    .qr-text p {
+      font-size: 1rem;
+    }
+  }
+  
